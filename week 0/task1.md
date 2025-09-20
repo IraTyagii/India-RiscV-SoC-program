@@ -30,37 +30,37 @@ Think of this like designing the blueprint of a house.
 
 You decide where each block (CPU, memory, I/O, etc.) should go on the chip.
 
-The goal is to place them in a way that saves space and makes connections shorter (for speed).
-**Placement**
+The goal is to place them in a way that saves space and makes connections shorter (for speed).  
+**Placement**  
 
 Once the floorplan is ready, individual standard cells (logic gates, flip-flops, etc.) are placed inside their allocated regions.
 
 It’s like arranging furniture inside each room of the house.
 
-The tool ensures that cells are placed efficiently to reduce delays.
-**Routing**
+The tool ensures that cells are placed efficiently to reduce delays.  
+**Routing**  
 
 After placement, all cells and blocks need to be wired together.
 
 Routing automatically creates metal connections between the cells.
 
-It’s like adding electrical wiring and water pipes in your house so everything works.
+It’s like adding electrical wiring and water pipes in your house so everything works.  
 
-**Macros**
+**Macros**  
 
 These are large pre-designed blocks that can’t be broken into smaller pieces.
 
 Example: SRAM blocks, large memory arrays, PLLs.
 
-They are “dropped” into the chip as ready-made pieces.
+They are “dropped” into the chip as ready-made pieces.  
 
-**Analog IPs**
+**Analog IPs**  
 
 IPs (Intellectual Property blocks) that handle analog functions.
 
 Example: ADC (Analog-to-Digital Converter), DAC, PHY for USB or HDMI.
 
-These are carefully designed by analog engineers and reused in chips.
+These are carefully designed by analog engineers and reused in chips.  
 
 # 5. Final Layout
 
