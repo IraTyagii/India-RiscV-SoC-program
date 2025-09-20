@@ -3,13 +3,12 @@
 <details>
 <summary> System Configuration </summary>
    
-### SYSTEM INFO:  
+### SYSTEM REQUIREMENTS AND CONFIGURATION:  
 
 
 
-1. SYSTEM INFO:
-   OS: Ubuntu 24.04.2 LTS  
-   Kernel: 6.8.0-83-generic  
+1. SYSTEM INFO:  
+   OS: Ubuntu 24.04.2 LTS   
    Architecture: x86_64
 
 2. CPU INFO:  
