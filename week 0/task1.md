@@ -7,6 +7,7 @@ The lecture explained the **step-by-step process of designing a chip**.
 
    * First, we decide what the chip should do.
    * At this stage, the design is usually written in **C language**, and a **testbench in C** is also prepared to check if the functionality works correctly.
+   * We can use gcc compiler as suggested in the video
 
 2. **RTL Design (Verilog)**
 
