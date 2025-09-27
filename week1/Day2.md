@@ -1,5 +1,5 @@
 # Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
-## Introduction to timing .libs
+## 1. Introduction to timing .libs
 
 
 The *sky130_fd_sc_hd__tt_025C_1v80.lib* filename encodes important information such as   
@@ -22,7 +22,7 @@ I searched for the gate using find feature
 
 
 
-## Hierarchical vs Flat Synthesis
+## 2. Hierarchical vs Flat Synthesis
 
 🟦 Hierarchical Analysis Implemetation
 
@@ -81,7 +81,7 @@ output <img width="1168" height="834" alt="Screenshot 2025-09-27 021113" src="ht
 
 
 
-## Various Flop coding styles and optimizations
+## 3. Various Flop coding styles and optimizations
 
 
 ### Asynchronous Flip Flop
