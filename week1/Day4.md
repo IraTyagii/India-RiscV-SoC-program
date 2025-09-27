@@ -1,6 +1,6 @@
 # GLS, Blocking vs Non - Blocking and synthesis-simulation mismatch
 ## 1. GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements  
-**GLS**  
+### GLS  
 
 GLS = Gate-Level Simulation
 It means simulating the netlist (after synthesis), not the original RTL.
@@ -15,13 +15,15 @@ Why we do GLS:
 2) To catch synthesis issues (like missing resets, uninitialized flops)  
 3)To verify timing (with SDF back-annotation)
 
-**Synthesis-Simulation mismatch**  
+### Synthesis-Simulation mismatch   
 
 It happens when the behavior of your RTL simulation (before synthesis) ≠  the behavior of the synthesized netlist (after synthesis, during GLS).
 
 This usually means the code was written in a way that the simulator and synthesizer interpret differently.
 
-**Blocking/Non-blocking statements**  
+### Blocking/Non-blocking statements  
+
+
 | Feature                 | Blocking (`=`)          | Non-Blocking (`<=`)           |
 | ----------------------- | ----------------------- | ----------------------------- |
 | Execution order         | One after another       | All at once (parallel)        |
