@@ -1,6 +1,6 @@
 # Combinational and Sequential optimizations
 
-## Introduction to optimizations
+## 1. Introduction to optimizations
 
 Making a design better that uses less area, less power, or runs faster without changing what it does.
 
@@ -19,7 +19,7 @@ extra logic is removed
 
 
 
-## combinational logic optimizations
+## 2. combinational logic optimizations
 Go to the directory
 ```bash
 cd Documents/vsd/sky130RTLDesignAndSynthesisWorkshop/lib
@@ -68,7 +68,7 @@ show
 <img width="851" height="730" alt="Screenshot 2025-09-27 102228" src="https://github.com/user-attachments/assets/baaf7c7c-49b0-4f4a-9730-c1f02537fa1f" />
 
 
-## Sequential logic optimizations
+## 3. Sequential logic optimizations
 verilog code for dff_const1.v
 ```v
 module dff_const1 (input clk, input rst_n, output reg q);
@@ -116,7 +116,7 @@ output
 
 
 
-## Sequential optimizations for unused outputs
+## 4. Sequential optimizations for unused outputs
 
 verilog code for counter_opt.v
 ```v
