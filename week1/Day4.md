@@ -1,7 +1,49 @@
 # GLS, Blocking vs Non - Blocking and synthesis-simulation mismatch
 ## GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements  
+**GLS**  
+
+GLS = Gate-Level Simulation
+It means simulating the netlist (after synthesis), not the original RTL.
+
+RTL simulation → Runs on your behavioral Verilog (using Icarus, etc.)
+
+GLS → Runs on synthesized gate-level netlist (using standard cell gates + .lib timing).
+
+Why we do GLS:
+
+1) To check if the netlist works the same as RTL
+2) To catch synthesis issues (like missing resets, uninitialized flops)  
+3)To verify timing (with SDF back-annotation)
+
+**Synthesis-Simulation mismatch**  
+
+It happens when the behavior of your RTL simulation (before synthesis) ≠  the behavior of the synthesized netlist (after synthesis, during GLS).
+
+This usually means the code was written in a way that the simulator and synthesizer interpret differently.
+
+**Blocking/Non-blocking statements**  
+| Feature                 | Blocking (`=`)          | Non-Blocking (`<=`)           |
+| ----------------------- | ----------------------- | ----------------------------- |
+| Execution order         | One after another       | All at once (parallel)        |
+| Best for                | Combinational logic     | Sequential logic (flip-flops) |
+| Behavior                | Like normal variables   | Like flip-flops/registers     |
+| Race conditions         | More likely if misused  | Safer in sequential blocks    |
+| Simulation vs synthesis | May mismatch if misused | Matches hardware behavior     |
+
+### Summary
+
+
+
+
+| Concept                           | Meaning                         | When Used            | Key Point                          |
+| --------------------------------- | ------------------------------- | -------------------- | ---------------------------------- |
+| **GLS**                           | Simulating gate-level netlist   | After synthesis      | Verifies netlist matches RTL       |
+| **Blocking (`=`)**                | Immediate assignment            | Combinational blocks | Order matters                      |
+| **Non-Blocking (`<=`)**           | Parallel assignment             | Sequential blocks    | Avoids race conditions             |
+| **Synthesis–Simulation Mismatch** | RTL vs Netlist behavior differs | After synthesis      | Caused by bad coding or constructs |
+
 ## labs on GLS and synthesis-simulation mismatch  
-### Ternary1
+### Ternary_mux
 ```bash
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
 ./a.out
