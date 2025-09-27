@@ -1,5 +1,5 @@
 # INTRODUCTION TO RTL DESIGN AND SYNTHESIS
-## Introduction to open source simulator iverilog
+## 1. Introduction to open source simulator iverilog
 **What is a simulator?** 
 
 A simulator is a tool that imitates the behavior of a real circuit or system before actually building it in hardware.  
@@ -19,7 +19,7 @@ It’s like a virtual lab setup where you “test” your circuit before buildin
 
 Verilog Codes and testbenches -> verilog Compiler (iverilog) → VCD(value change dump file) Output → GTKWave Viewer  
 
-## Labs using iverilog and gtkwave  
+## 2. Labs using iverilog and gtkwave  
 
 
 ### Make a directory
@@ -61,12 +61,12 @@ gtkwave tb_good_mux.vcd
 
 
 
-## Introduction to yosys and logic synthesis  
+## 3. Introduction to yosys and logic synthesis  
 **synthesizer**  
 **verify the synthesize**  
 **RTL design**
 **.Lib**
-## Labs using yosys and sky130
+## 4. Labs using yosys and sky130
 
 ```bash
 cd Documents/vsd/sky130RTLDesignAndSynthesisWorkshop/verilog_files
