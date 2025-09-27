@@ -1,5 +1,5 @@
 # GLS, Blocking vs Non - Blocking and synthesis-simulation mismatch
-## GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements  
+## 1. GLS, Synthesis-Simulation mismatch and Blocking/Non-blocking statements  
 **GLS**  
 
 GLS = Gate-Level Simulation
@@ -42,7 +42,7 @@ This usually means the code was written in a way that the simulator and synthesi
 | **Non-Blocking (`<=`)**           | Parallel assignment             | Sequential blocks    | Avoids race conditions             |
 | **Synthesis–Simulation Mismatch** | RTL vs Netlist behavior differs | After synthesis      | Caused by bad coding or constructs |
 
-## labs on GLS and synthesis-simulation mismatch  
+## 2. labs on GLS and synthesis-simulation mismatch  
 ### Ternary_mux
 ```bash
 iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
@@ -71,8 +71,10 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 ./a.out
 gtkwave  tb_ternary_operator_mux_net.v
 ```
+<img width="892" height="697" alt="image" src="https://github.com/user-attachments/assets/90338d73-da5b-4abc-a0ec-34155c2c12f9" />
 
-<img width="849" height="951" alt="Screenshot 2025-09-27 121022" src="https://github.com/user-attachments/assets/45d60ca4-242d-4404-ba8e-99d5082cfb81" />
+we can compare the synthesis simulation mismatch in the waveforms
+
 
 ### Bad_mux
 
@@ -100,8 +102,9 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 ./a.out
 gtkwave  tb_bad_mux_net.v
 ```
+<img width="882" height="643" alt="image" src="https://github.com/user-attachments/assets/da843762-d976-4b2a-9ff2-2e53969296e1" />
 
-## Labs on synth-sim mismatch for blocking statement
+## 3. Labs on synth-sim mismatch for blocking statement
 
 ### blocking caveat
 
@@ -131,4 +134,5 @@ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_
 ./a.out
 gtkwave tb_blocking_caveat_net.v
 ```
+<img width="888" height="702" alt="image" src="https://github.com/user-attachments/assets/68315b02-814a-4e8a-a7b1-53fac77221d3" />
 
