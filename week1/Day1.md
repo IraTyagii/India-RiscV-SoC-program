@@ -15,6 +15,8 @@ A testbench is just a Verilog file that gives inputs to your design and checks t
 It’s like a virtual lab setup where you “test” your circuit before building it.  
 
 **How a simulator is used?**  
+
+
 *Iverilog based simulation flow*
 
 Verilog Codes and testbenches -> verilog Compiler (iverilog) → VCD(value change dump file) Output → GTKWave Viewer  
