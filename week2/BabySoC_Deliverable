@@ -1,1 +1,102 @@
+# 🧠 Week 2 – BabySoC Fundamentals & Functional Modelling
+
+> **Objective:**  
+> Build a solid understanding of SoC design fundamentals and learn how **BabySoC** fits into the overall chip design flow.  
+> This includes the role of **functional modelling** using tools like *Icarus Verilog* and *GTKWave* before RTL and physical design.
+
+---
+
+<details>
+<summary><strong>📌 What is a System-on-Chip (SoC)?</strong></summary>
+
+A **System-on-Chip (SoC)** is an integrated circuit that combines all the major components of a computer or electronic system into a single chip.  
+Instead of having separate ICs for each function, everything is placed on one die.  
+
+### ✨ Benefits
+- ⚡ **Higher performance** – shorter communication paths between modules.  
+- 🧠 **Lower power consumption** – fewer external interconnects.  
+- 💰 **Cost-effective** – fewer components, smaller PCB area.  
+- 📏 **Compact** – ideal for embedded systems, mobile devices, and IoT.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🧱 Components of a Typical SoC</strong></summary>
+
+1. **🧮 CPU (Processor Core)**  
+   - Executes instructions and acts as the brain of the SoC.  
+   - Often based on **RISC-V**, ARM, or other architectures.
+
+2. **💾 Memory**  
+   - Includes on-chip RAM, ROM, and sometimes cache.  
+   - Stores both program code and data.
+
+3. **🌐 Peripherals**  
+   - Interfaces like UART, GPIO, timers, ADC/DAC.  
+   - Allow the SoC to communicate with external systems.
+
+4. **🔗 Interconnect (Bus / NoC)**  
+   - Enables communication between CPU, memory, and peripherals.  
+   - Common protocols: **AXI**, **AHB**, or simpler custom buses in educational SoCs.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🌱 Why BabySoC?</strong></summary>
+
+**BabySoC** is a simplified SoC model created for educational purposes.  
+
+✅ It removes unnecessary complexity and focuses on the **core building blocks**.  
+✅ It provides a **hands-on way** to understand how SoCs are structured and simulated.  
+✅ It serves as a **bridge between theory and real chip design**, making it easier to grasp each stage in the flow.
+
+### 🧠 Key Points
+- Minimal CPU + basic memory + simple peripherals.  
+- Great for verifying architectural concepts before diving into RTL.  
+- Ideal for students to experiment with and extend.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🧪 Role of Functional Modelling</strong></summary>
+
+Before RTL and physical design, **functional modelling** plays a crucial role in verifying the SoC’s architecture.  
+
+### 🚀 Why it matters
+- Detects **logical/architectural issues early**.  
+- Reduces time wasted in later design stages.  
+- Provides a **high-level behavioural simulation** to ensure that all components work together.
+
+### 🛠 Tools Used
+- **Icarus Verilog** – for compiling and simulating the design.  
+- **GTKWave** – for viewing waveforms and signal interactions over time.
+
+This stage validates the **architecture of BabySoC** and ensures correctness before synthesis and layout.
+
+</details>
+
+---
+
+## 📝 Summary
+
+Understanding SoC fundamentals is the **foundation of chip design**.  
+**BabySoC** simplifies complex SoC concepts, allowing students to **focus on learning** rather than wrestling with unnecessary details.  
+
+By performing **functional modelling**, we confirm the logical correctness of the design before moving into RTL implementation and physical design stages — making the entire chip flow **more robust, structured, and efficient**.
+
+---
+
+### 🌐 References
+- [📚 Fundamentals of SoC Design Notes](https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/11.%20Fundamentals%20of%20SoC%20Design)
+
+---
+
+⭐ *This write-up is part of Week 2 of the BabySoC Journey.*  
+🛠 *Tools: Icarus Verilog, GTKWave | Focus: Architecture & Modelling*
 
