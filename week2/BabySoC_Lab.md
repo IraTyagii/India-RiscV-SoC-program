@@ -23,19 +23,25 @@ This lab covers:
 git clone https://github.com/manili/VSDBabySoC.git
 cd VSDBabySoC
 ```
+make a directory
 ```bash
 mkdir -p simulation
 ```
 
 
-
 2. Installed Icarus Verilog and GTKWave.  
+
+(*Already done in week1 task2*)
+
 3. Compiled the design using `iverilog`.  
 
+Install sandpiper to compile rvmyth.tlv file
 ```bash
 pip3 install pyyaml click sandpiper-saas
 sandpiper-saas -i ./src/module/*.tlv -o rvmyth.v --bestsv --noline -p verilog --outdir ./src/module/
 ```
+
+compile in iverilog
 ```bash
 iverilog -o simulation/pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v -I src/include -I src/module
 ```
@@ -167,4 +173,4 @@ By simulating the BabySoC design:
 This confirms that the BabySoC modules (Core + PLL + DAC) integrate and function together as expected.
 
 ---
-
+*END of LAB*
