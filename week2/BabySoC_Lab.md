@@ -1,5 +1,13 @@
 # Week 2 – BabySoC Fundamentals & Functional Modelling
 
+## 📑 Table of Contents
+- [Objective](#objective)
+- [Tools Used](#tools-used)
+- [Steps Performed](#steps-performed)
+- [Results & Observations](#results--observations)
+- [Conclusion](#conclusion)
+
+
 ## Objective
 To build a solid understanding of SoC fundamentals and practice functional modelling of the BabySoC using simulation tools (Icarus Verilog & GTKWave).
 
@@ -17,7 +25,7 @@ This lab covers:
 ---
 
 ## Steps Performed
-1. Cloned the VSDBabySoC GitHub repository.  
+### 1. Cloned the VSDBabySoC GitHub repository.  
 
 ```bash
 git clone https://github.com/manili/VSDBabySoC.git
@@ -29,11 +37,11 @@ mkdir -p simulation
 ```
 
 
-2. Installed Icarus Verilog and GTKWave.  
+### 2. Installed Icarus Verilog and GTKWave.  
 
 (*Already done in week1 task2*)
 
-3. Compiled the design using `iverilog`.  
+### 3. Compiled the design using `iverilog`.  
 
 Install sandpiper to compile rvmyth.tlv file
 ```bash
@@ -47,7 +55,7 @@ iverilog -o simulation/pre_synth_sim.out -DPRE_SYNTH_SIM src/module/testbench.v 
 ```
 
 
-4. Simulated to generate `.vcd` waveform file.  
+### 4. Simulated to generate `.vcd` waveform file.  
 
 ```bash
 cd simulation
@@ -56,7 +64,7 @@ gtkwave pre_synth_sim.vcd
 ```
 
 
-6. Opened `.vcd` in GTKWave and analyzed signals.  
+### 5. Opened `.vcd` in GTKWave and analyzed signals.  
 <img width="803" height="272" alt="image" src="https://github.com/user-attachments/assets/c3f7c63e-ef6e-435b-b717-efa7ba1fa005" />
 
 <details><summary>👉 OUTPUT SIGNALS </summary>
