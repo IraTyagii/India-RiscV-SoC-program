@@ -45,15 +45,15 @@ A System-on-Chip (SoC) is an integrated circuit that consolidates the essential 
 
 ---
 
-### Core Modules
-#### Processor / Controller:   
-A small RISC core that fetches, decodes, and executes instructions.
-#### Memory Interface:   
-Simplified RAM/ROM to demonstrate read/write operations and bus signaling.
-#### Peripherals:   
-LEDs, switches, counters, UART/timers for I/O interaction.
-#### Clock & Reset Logic:   
-Ensures synchronization and initializes the system to a known state.  
+### Core Modules  
+
+#### Processor / Controller: A small RISC core that fetches, decodes, and executes instructions.  
+
+#### Memory Interface: Simplified RAM/ROM to demonstrate read/write operations and bus signaling.  
+
+#### Peripherals: LEDs, switches, counters, UART/timers for I/O interaction.  
+
+#### Clock & Reset Logic: Ensures synchronization and initializes the system to a known state.  
 
 ---
 ### How Baby SoC Works – Step by Step
