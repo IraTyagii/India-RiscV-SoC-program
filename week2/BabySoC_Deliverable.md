@@ -113,7 +113,9 @@ By performing **functional modelling**, we confirm the logical correctness of th
 ---
 
 #### 🌐 References
-- [📚 Fundamentals of SoC Design Notes]((https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/12.%20VSDBabySoC%20Project))
+[VSDBabySoC GitHub Repository](https://github.com/hemanthkumardm/SFAL-VSD-SoC-Journey/tree/main/12.%20VSDBabySoC%20Project).
+
+
 
 ---
 
